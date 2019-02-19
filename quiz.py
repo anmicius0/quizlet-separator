@@ -1,14 +1,19 @@
 def main():
     file_path = input("enter your file path: ")
-    # file_path = 'quiz.txt'
-    export_separate(file_path)
 
-def export_separate(file_path):
+    separator = input("yor separator [\t]: ")
+    if separator == '':
+        separator = '\t'
+
+    export_separate(file_path, separator)
+
+def export_separate(file_path, separator):
     """
     separate english and chinese(definition)
     
     Args:
         file_path: file_path
+        separator: the separator you chose when you export quizlet text
 
     Return:
         the english list
