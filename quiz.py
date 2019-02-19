@@ -20,12 +20,18 @@ def export_separate(file_path, separator):
     """
     words = []
 
-    with open(file_path, 'r') as text:
-        lines = text.readlines()
-        for line in lines:
-            eng, chi = line.split('\t')
-            words.append(eng)
-    
+    try:
+        with open(file_path, 'r') as text:
+            lines = text.readlines()
+            for line in lines:
+                eng, chi = line.split('separator')
+                words.append(eng    )
+    except FileNotFoundError:
+        raise FileNotFoundError("Can't open the file")
+    except ValueError:
+        raise ValueError("Invalid separator")
+
+
     with open(file_path, 'w') as text:
         for word in words:
             text.write(word + '\n')

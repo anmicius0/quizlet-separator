@@ -18,4 +18,4 @@ circular	圓形的、環狀的
 resemble	與...相似、類似
 ruin	遺跡、廢墟
 found	建立、創立
-remain	留下、仍然存在、保持
+remain	留下、仍然存在、保持    
