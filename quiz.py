@@ -24,8 +24,8 @@ def export_separate(file_path, separator):
         with open(file_path, 'r') as text:
             lines = text.readlines()
             for line in lines:
-                eng, chi = line.split('separator')
-                words.append(eng    )
+                eng, chi = line.split(separator)
+                words.append(eng)
     except FileNotFoundError:
         raise FileNotFoundError("Can't open the file")
     except ValueError:
