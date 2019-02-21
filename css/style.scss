@@ -1,0 +1,25 @@
+%center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    @extend %center;
+    height: 100vh;
+
+    div {
+        margin: 0vh 0vw;
+    }
+    
+    textarea {
+        height: 100%;
+        width: 100%;
+    }
+
+    .row {
+        height: 40%%;
+    }
+}
+
