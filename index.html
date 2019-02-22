@@ -11,25 +11,19 @@
 <body>
     <div class="container">
         <div class="row">
-
-            <div class="col-6" class="input">
-                <textarea id="input-string" placeholder="paste your exportation here"> </textarea>
+            
+            <div class="col-6" >
+                <textarea id="textarea" placeholder="paste your exportation here"> </textarea>
             </div>
-            <div class="col-6" class="input">
-                <form>
+
+            <div class="col-6">
+                <form name="separator-form" >
                     <input type="radio" name="separator" value="\t"> Tab (default) <br>
-                    <input type="radio" name="separator" value="\t"> Comma <br>
-                    <input type="radio" name="separator" value=""> Custom <input type="text" name="other_reason" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​ <br>​​​ 
-                    <button type="submit" class="btn btn-primary"> Submit </button>
+                    <input type="radio" name="separator" value=","> Comma <br>
+                    <input type="radio" name="separator" value=""> Custom <input type="text" name="custom-separator">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​ <br>​​​ 
                 </form>
-            </div>
 
-
-            <div class="col-6" class="reponse" style="display: none;">
-                <textarea id="opt-eng"> </textarea>
-            </div>
-            <div class="col-6" class="reponse" style="display: none;">
-                <textarea id="opt-chi"> </textarea>
+                <button type="submit" class="btn btn-primary" onclick="validation()"> Submit </button>
             </div>
 
         </div>
