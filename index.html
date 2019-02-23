@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 
 <head>
+
+    <!-- my own file -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="quiz.js"></script>
+    <!-- // -->
 
     <!-- google font, bootstrap and sweat alert -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Staatliches" rel="stylesheet"> 
@@ -10,7 +14,6 @@
     <!-- // -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="quiz.js"></script>
     <title> Quizlet separator </title>
 </head>
 
@@ -19,15 +22,15 @@
 
         <div class="row">
             
-                <div class=" title">
-                    <h1>Quizlet Separator - English only...</h1>
-                </div>
+            <div class="title">
+                <h1>Quizlet Separator - English only</h1>
+            </div>
 
-            <div class="col-6" >
+            <div class="col-12 col-sm-6" >
                 <textarea id="textarea" placeholder="paste your exportation here"> </textarea>
             </div>
 
-            <div class="col-6">
+            <div class="col-12 col-sm-6">
                 <button id="submit" type="button" class="btn btn-outline-dark" onclick="separate()"> Submit </button>
                 <button id="copy" type="button" class="btn btn-outline-secondary"> Copied! </button>
                 <br>

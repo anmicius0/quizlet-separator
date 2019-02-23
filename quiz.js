@@ -1,11 +1,15 @@
 
 function separate() {
 
+    // creat some empty list
     let lines = [];
     let words = [];
     let engWords = [];
+
+    // get input text
     let text = document.getElementById("textarea").value;
 
+    // start separate
     lines = text.split("\n");
     
     for (let i=0; i<lines.length; i++) {
@@ -19,17 +23,17 @@ function separate() {
     for (let i=0; i<words.length; i+=2) {
         engWords.push( words[i] );
     };
+    
 
-    show_result(engWords);
-}
-
-function show_result(engWords) {
-
+    // print result in textarea
     document.getElementById("textarea").value = engWords;
+    
+    // start copying
     copy();
 }
 
 function copy() {
+
     //  Select the text field
     document.getElementById("textarea").select();
 
@@ -41,7 +45,6 @@ function copy() {
     document.getElementById("copy").style.display = "block";
     document.getElementById("copy-again").style.display = "block";
 
-    // beta
     // swal
     const Toast = Swal.mixin({
         toast: true,

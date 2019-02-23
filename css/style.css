@@ -10,6 +10,12 @@
           align-items: center;
 }
 
+@media (max-width: 600px) {
+  .title {
+    content: "Quizlet Separator";
+  }
+}
+
 .container {
   height: 100vh;
 }
@@ -35,6 +41,7 @@
 /* DEMO-SPECIFIC STYLES */
 .title h1 {
   color: #000000;
+  font-size: 5vw;
   font-family: 'Staatliches', cursive;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
