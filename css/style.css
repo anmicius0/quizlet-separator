@@ -28,7 +28,7 @@
   height: 40%;
 }
 
-.container #copy {
+.container #copy, .container #copy-again {
   display: none;
 }
 

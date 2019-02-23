@@ -2,8 +2,13 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- google font, bootstrap and sweat alert -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Staatliches" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <!-- // -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="quiz.js"></script>
     <title> Quizlet separator </title>
@@ -25,6 +30,8 @@
             <div class="col-6">
                 <button id="submit" type="button" class="btn btn-outline-dark" onclick="separate()"> Submit </button>
                 <button id="copy" type="button" class="btn btn-outline-secondary"> Copied! </button>
+                <br>
+                <button id="copy-again" type="button" class="btn btn-outline-secondary" onclick="copy()"> Copy again </button>
             </div>
 
         </div>
