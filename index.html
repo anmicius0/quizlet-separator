@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Staatliches" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="quiz.js"></script>
@@ -10,20 +11,20 @@
 
 <body>
     <div class="container">
+
         <div class="row">
             
+                <div class=" title">
+                    <h1>Quizlet Separator - English only...</h1>
+                </div>
+
             <div class="col-6" >
                 <textarea id="textarea" placeholder="paste your exportation here"> </textarea>
             </div>
 
             <div class="col-6">
-                <form name="separator-form" >
-                    <input type="radio" name="separator" value="\t"> Tab (default) <br>
-                    <input type="radio" name="separator" value=","> Comma <br>
-                    <input type="radio" name="separator" value=""> Custom <input type="text" name="custom-separator">​​​​​​​​​​​​​​​​​​​​​​​​​​​​​ <br>​​​ 
-                </form>
-
-                <button type="submit" class="btn btn-primary" onclick="validation()"> Submit </button>
+                <button id="submit" type="button" class="btn btn-outline-dark" onclick="separate()"> Submit </button>
+                <button id="copy" type="button" class="btn btn-outline-secondary"> Copied! </button>
             </div>
 
         </div>

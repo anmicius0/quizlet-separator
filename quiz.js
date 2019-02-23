@@ -1,29 +1,10 @@
 
-function validation() {
-    /* 
-        get the form input and set config value
-    */ 
-
-    let input = document.getElementById("textarea").value;
-    var separator = document.forms["separator-form"]["separator"].value;
-    
-    if ( separator === "") {
-       separator = document.forms["separator-form"]["custom-separator"].value;
-    };
-
-    separate(input, separator);
-}
-
-function separate(text, separator) {
-    /*
-        args:
-            text: the user's input strgin 
-            separator: separator
-    */
+function separate() {
 
     let lines = [];
     let words = [];
-    let eng_words = [];
+    let engWords = [];
+    let text = document.getElementById("textarea").value;
 
     lines = text.split("\n");
     
@@ -36,14 +17,27 @@ function separate(text, separator) {
     };
 
     for (let i=0; i<words.length; i+=2) {
-        eng_words.push( words[i]);
+        engWords.push( words[i] );
     };
 
-    show_result(eng_words);
+    show_result(engWords);
 }
 
-function show_result(eng_words) {
+function show_result(engWords) {
 
-    document.getElementById("textarea").value = eng_words;
-    document.getElementsByTagName("button")[0].setAttribute();
+    document.getElementById("textarea").value = engWords;
+    copy();
+}
+
+function copy() {
+    //  Select the text field
+    document.getElementById("textarea").select();
+
+    // Copy the text inside the text field
+    document.execCommand("copy");
+
+    // Hide "submit" button and show "copy" button
+    document.getElementById("submit").style.display = "none";
+    document.getElementById("copy").style.display = "block";
+
 }

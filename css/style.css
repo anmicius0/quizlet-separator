@@ -21,9 +21,68 @@
 .container textarea {
   height: 100%;
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container .row {
   height: 40%;
+}
+
+.container #copy {
+  display: none;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.title h1 {
+  color: #000000;
+  font-family: 'Staatliches', cursive;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+          animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
 /*# sourceMappingURL=style.css.map */
